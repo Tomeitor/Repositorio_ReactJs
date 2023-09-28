@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,4 +21,69 @@ body,
 #root {
   display: flex;
   flex-direction: column;
+}
+
+/* .header {
+  @apply flex justify-between p-4 bg-blue-400 shadow-md;
+} */
+
+.header {
+  background-color: rgb(24, 24, 24);
+}
+
+.titulo {
+  font-family: "pirata one", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.nav {
+  color: aqua;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.ulNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.liNav {
+  font-family: "bokor", sans-serif;
+  color: rgb(179, 0, 0);
+  font-size: 140%;
+  margin: 0 2rem;
+}
+
+.main {
+  background-image: url(./Components/images/susan-wilkinson-azul2.webp);
+}
+
+.carritoUsuario {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  margin: 2rem;
+  color: white;
+}
+
+.itemListContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(75, 156, 226);
+}
+
+.navBuscador {
+  margin: 2rem;
+}
+
+.divBuscador {
+  display: flex;
+  justify-content: center;
 }

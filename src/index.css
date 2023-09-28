@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
@@ -17,12 +21,4 @@ body,
 
 main {
   flex-grow: 1;
-}
-
-.header-34 {
-  background-color: red;
-}
-
-.header-35 {
-  background-color: rgb(161, 0, 0);
 }

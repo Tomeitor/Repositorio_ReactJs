@@ -4,12 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css"; */
 
 import Header from "./Components/Header.jsx";
-import Main from "./Components/Main.jsx";
+import Main from "./Components/Main2.jsx";
+
 
 const App = () => {
-  const nombre = "Tomas";
-  const edad = 18;
-
   return (
     <>
       <Header />
