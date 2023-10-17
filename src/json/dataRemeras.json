@@ -1,0 +1,98 @@
+[
+  {
+    "id": 17,
+    "foto": "/src/Components/images/remera-keep_it.webp",
+    "nombre": "Keep it",
+    "precio": 25.999
+  },
+  {
+    "id": 18,
+    "foto": "/src/Components/images/remera_bastard_2000.webp",
+    "nombre": "Bastard 2000",
+    "precio": 25.999
+  },
+  {
+    "id": 19,
+    "foto": "/src/Components/images/remera_bs90.webp",
+    "nombre": "Bs90",
+    "precio": 25.999
+  },
+  {
+    "id": 20,
+    "foto": "/src/Components/images/remera_complicate_bordada.webp",
+    "nombre": "Complicate",
+    "precio": 25.999
+  },
+  {
+    "id": 21,
+    "foto": "/src/Components/images/remera_evil.webp",
+    "nombre": "Evil",
+    "precio": 25.999
+  },
+  {
+    "id": 22,
+    "foto": "/src/Components/images/remera_kitty_perla.webp",
+    "nombre": "Kitty perla",
+    "precio": 25.999
+  },
+  {
+    "id": 23,
+    "foto": "/src/Components/images/remera_not_real.webp",
+    "nombre": "Not real",
+    "precio": 25.999
+  },
+  {
+    "id": 24,
+    "foto": "/src/Components/images/remera_only_you.webp",
+    "nombre": "Only you",
+    "precio": 25.999
+  },
+  {
+    "id": 25,
+    "foto": "/src/Components/images/remera_pleasure.webp",
+    "nombre": "Pleasure",
+    "precio": 25.999
+  },
+  {
+    "id": 26,
+    "foto": "/src/Components/images/remera_self_love.webp",
+    "nombre": "Self love",
+    "precio": 25.999
+  },
+  {
+    "id": 27,
+    "foto": "/src/Components/images/remera_sensitive.webp",
+    "nombre": "Sensitive",
+    "precio": 25.999
+  },
+  {
+    "id": 28,
+    "foto": "/src/Components/images/remerabluehair.webp",
+    "nombre": "Blue hair girl",
+    "precio": 25.999
+  },
+  {
+    "id": 29,
+    "foto": "/src/Components/images/remera_happening.webp",
+    "nombre": "Happening",
+    "precio": 25.999
+  },
+  {
+    "id": 30,
+    "foto": "/src/Components/images/remera_heat_not_hot.webp",
+    "nombre": "Heat not hot",
+    "precio": 25.999
+  },
+  {
+    "id": 31,
+    "foto": "/src/Components/images/remera_og-trash_bordada.webp",
+    "nombre": "Og trash",
+    "precio": 25.999
+  },
+  {
+    "id": 32,
+    "foto": "/src/Components/images/remera_sinner.webp",
+    "nombre": "Sinner",
+    "precio": 25.999
+  }
+]

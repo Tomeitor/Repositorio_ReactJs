@@ -23,41 +23,16 @@ body,
   flex-direction: column;
 }
 
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/index";
+@import "scss/contacto";
+@import "scss/tienda";
+@import "scss/media";
+
 /* .header {
   @apply flex justify-between p-4 bg-blue-400 shadow-md;
 } */
-
-.header {
-  background-color: rgb(24, 24, 24);
-}
-
-.titulo {
-  font-family: "pirata one", sans-serif;
-  text-align: center;
-  font-size: 4rem;
-}
-
-.nav {
-  color: aqua;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-}
-
-.ulNav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.liNav {
-  font-family: "bokor", sans-serif;
-  color: rgb(179, 0, 0);
-  font-size: 140%;
-  margin: 0 2rem;
-}
 
 .main {
   background-image: url(./Components/images/susan-wilkinson-azul2.webp);
@@ -79,11 +54,10 @@ body,
   color: rgb(75, 156, 226);
 }
 
-.navBuscador {
-  margin: 2rem;
+.modoDarkOn {
+  background-color: rgb(20, 20, 20);
 }
 
-.divBuscador {
-  display: flex;
-  justify-content: center;
+.modoDarkOff {
+  background-color: rgb(189, 189, 189);
 }

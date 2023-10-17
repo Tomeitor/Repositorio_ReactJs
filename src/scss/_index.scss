@@ -1,0 +1,45 @@
+.header {
+  background-color: rgb(24, 24, 24);
+}
+
+.titulo {
+  font-family: "pirata one", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.nav {
+  color: aqua;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.divBuscador {
+  display: flex;
+  justify-content: center;
+}
+
+.navBuscador {
+  margin: 2rem;
+}
+
+.ulNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.liNav {
+  font-family: "bokor", sans-serif;
+  color: rgb(179, 0, 0);
+  font-size: 140%;
+  margin: 0 2rem;
+}
+
+.active {
+  text-decoration: line-through;
+  color: rgb(119, 0, 0);
+}

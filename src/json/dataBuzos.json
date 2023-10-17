@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "foto": "/src/Components/images/hoodie_sensitive.webp",
+    "nombre": "Sensitive",
+    "precio": 25.999
+  },
+  {
+    "id": 2,
+    "foto": "/src/Components/images/hoodie_goat.webp",
+    "nombre": "Goat",
+    "precio": 25.999
+  },
+  {
+    "id": 3,
+    "foto": "/src/Components/images/hoodie_not_real_naranja.webp",
+    "nombre": "Not real",
+    "precio": 25.999
+  },
+  {
+    "id": 4,
+    "foto": "/src/Components/images/hoodie_21.webp",
+    "nombre": "Number 21",
+    "precio": 25.999
+  },
+  {
+    "id": 5,
+    "foto": "/src/Components/images/hoodie_hunt.webp",
+    "nombre": "Hunt",
+    "precio": 25.999
+  },
+  {
+    "id": 6,
+    "foto": "/src/Components/images/hoodie_allergic.webp",
+    "nombre": "Alergic",
+    "precio": 25.999
+  },
+  {
+    "id": 7,
+    "foto": "/src/Components/images/hoodie_keep_it_simple.webp",
+    "nombre": "Keep it simple",
+    "precio": 25.999
+  },
+  {
+    "id": 8,
+    "foto": "/src/Components/images/hoodie_bstrd_is_dead.webp",
+    "nombre": "Bastard is dead",
+    "precio": 25.999
+  },
+  {
+    "id": 9,
+    "foto": "/src/Components/images/hoodie_og_trash.webp",
+    "nombre": "Og trash",
+    "precio": 25.999
+  },
+  {
+    "id": 10,
+    "foto": "/src/Components/images/campera_justfly.webp",
+    "nombre": "Justyfly",
+    "precio": 25.999
+  },
+  {
+    "id": 11,
+    "foto": "/src/Components/images/hoodie_b4st4rd.webp",
+    "nombre": "B4st4rd",
+    "precio": 25.999
+  },
+  {
+    "id": 12,
+    "foto": "/src/Components/images/hoodie_13.webp",
+    "nombre": "Number 13",
+    "precio": 25.999
+  },
+  {
+    "id": 13,
+    "foto": "/src/Components/images/buzo_apache_gris.webp",
+    "nombre": "buzo apache gris",
+    "precio": 25.999
+  },
+  {
+    "id": 14,
+    "foto": "/src/Components/images/buzo_come_as_you_are.webp",
+    "nombre": "Come as you are",
+    "precio": 25.999
+  },
+  {
+    "id": 15,
+    "foto": "/src/Components/images/buzo_dont_belong.webp",
+    "nombre": "Dont belong",
+    "precio": 25.999
+  },
+  {
+    "id": 16,
+    "foto": "/src/Components/images/buzo_full_gothic.webp",
+    "nombre": "Buzo full gothic",
+    "precio": 25.999
+  }
+]
