@@ -1,0 +1,38 @@
+.tiendaArticulos {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8;
+}
+.tiendaContainer {
+  @apply p-2 shadow-md space-y-8 rounded-sm hover:scale-105 transition-all;
+}
+
+/* .container {
+  @include flex-general(column, center);
+  flex: 0 1 180px;
+  height: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 1rem;
+  padding: 1rem;
+} */
+
+.tiendaImg {
+  @apply h-[150px] object-contain w-full;
+}
+
+.tiendaTitulo {
+  /* text-decoration: underline;
+  color: black;
+  font-size: 100%;
+  margin: 0 0 0.8rem 0;
+  text-align: center;
+  font-size: 90%; */
+  @apply text-xl font-bold overflow-hidden whitespace-nowrap overflow-ellipsis;
+}
+
+.tiendaPrecio {
+  margin: 0 0 0.8rem 0;
+  text-align: center;
+  font-size: 90%;
+}
+
+.tiendaBoton {
+}

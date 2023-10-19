@@ -1,0 +1,6 @@
+@mixin flex-general($direction, $allign) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $allign;
+}

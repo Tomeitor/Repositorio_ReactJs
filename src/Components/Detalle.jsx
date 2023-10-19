@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import dataBuzos from "../json/dataBuzos.json";
+import dataRemeras from "../json/dataRemeras.json";
+import dataAll from "../json/dataAll.json";
 
 const Detalle = () => {
   /*  const params = useParams();
@@ -21,7 +23,7 @@ const Detalle = () => {
     setTimeout(() => {
       setLoading(false);
       console.log("Producto cargado");
-      dataBuzos.forEach((producto) => {
+      dataAll.forEach((producto) => {
         if (producto.id === parseInt(params.id)) {
           setNotFound(false);
           setProducto(producto);
