@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import dataBuzos from "../json/dataBuzos.json";
 import dataRemeras from "../json/dataRemeras.json";
-import dataAll from "../json/dataAll.json";
+import dataAll from "../json/dataAll";
 
 const Detalle = () => {
   /*  const params = useParams();

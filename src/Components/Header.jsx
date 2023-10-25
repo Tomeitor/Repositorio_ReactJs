@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import ItemListContainer from "./ItemListContainer";
+import MensajePersonalizado from "./MensajePersonalizado";
 
 const Header = () => {
   const mensajeGreeting =
@@ -10,7 +10,7 @@ const Header = () => {
       <h1 className="titulo">Suspicions</h1>
 
       <Navbar />
-      <ItemListContainer greeting={mensajeGreeting} />
+      <MensajePersonalizado greeting={mensajeGreeting} />
     </header>
   );
 };
