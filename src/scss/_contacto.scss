@@ -1,0 +1,145 @@
+.main_contacto {
+  background-image: url("../Components/images/Fondo_contacto_mar_oscuro.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.p_contacto {
+  font-size: 120%;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  margin: 3rem 0 3rem 0;
+  text-shadow: 0.8px 0.8px #18181881, 1.5px 1.5px rgba(59, 59, 59, 0.39);
+}
+
+.flex_contacto {
+  @include flex-general(row, center);
+  align-items: center;
+}
+
+.p_suspicions_contact_page {
+  font-size: 4rem;
+  font-family: "pirata one", sans-serif;
+  text-shadow: 3px 3px #18181881, 5px 5px rgba(59, 59, 59, 0.39);
+}
+
+.suspicions_contact_page {
+  display: flex;
+  justify-content: center;
+}
+
+.logos_contact_page {
+  margin: 2rem 1rem 3rem 1rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px #18181881, 3px 3px rgba(59, 59, 59, 0.39);
+}
+
+.logos_contact_page2 {
+  color: #292929;
+}
+
+.redes_contacto {
+  font-size: 130%;
+  text-decoration: none;
+}
+
+.margin_contacto {
+  padding: 0 10rem 0 10rem;
+}
+
+.margin_contacto2 {
+  font-family: "Libre Baskerville", serif;
+  width: 300px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  font-size: 120%;
+  text-shadow: 0.8px 0.8px #18181881, 1.5px 1.5px rgba(59, 59, 59, 0.39);
+}
+
+.margin_contacto3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo_pequeno {
+  width: 3rem;
+  margin: 1rem 1rem;
+  max-width: 100%;
+}
+
+.form_contact_page {
+  width: 320px;
+  height: 570px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000000;
+  margin: calc(50vh - 320px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.h2_contact_page {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+.input_contact_page {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+.input_contact_page:focus {
+  border-bottom: 2px solid #78788c;
+}
+.p_contact_page:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.button_contact_page {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button_contact_page:hover {
+  background: #78788c;
+  color: #fff;
+}
+.div_contact_page {
+  content: "Hi";
+  position: absolute;
+  bottom: -25px;
+  right: -10px;
+  background: #50505a;
+  color: #fff;
+  width: 340px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+.span_contact_page {
+  margin: 0 5px 0 15px;
+}

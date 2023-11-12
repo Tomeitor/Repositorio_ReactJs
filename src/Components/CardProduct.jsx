@@ -1,28 +1,38 @@
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import dataAll from "../json/dataAll.json";
 
 const CardProduct = ({ productos }) => {
+  const params = useParams();
+  const subtitulo =
+    params.id === undefined || params.id === "/" ? "Productos" : params.id;
   return (
     <section className="card-container">
-      {productos.length > 0 &&
-        productos.map((producto) => {
-          return (
-            <article className="tiendaArticulos" key={producto.id}>
-              <div className="tiendaContainer">
-                <img
-                  src={producto.foto}
-                  alt={producto.nombre}
-                  className="tiendaImg"
-                />
-                <h4 className="tiendaTitulo"> {producto.nombre} </h4>
-                <p className="tiendaPrecio"> {producto.precio} </p>
-                <Link to={`/detalle/${producto.id}`}>
-                  <button className="tiendaBoton">Detalle</button>
-                </Link>
-              </div>
-            </article>
-          );
-        })}
+      <h2 className=" tienda_subtitulo shadow-drop-center animate__animated animate__pulse container">
+        {subtitulo}
+      </h2>
+
+      <article className="container tiendaArticulos" /* key={producto.id} */>
+        {productos.length > 0 &&
+          productos.map((producto) => {
+            return (
+              <Link to={`/detalle/${producto.id}`}>
+                <div className="tiendaContainer">
+                  <img
+                    src={producto.foto}
+                    alt={producto.nombre}
+                    className="tiendaImg"
+                  />
+
+                  <h4 className="tiendaTitulo"> {producto.nombre} </h4>
+                  <p className="tiendaPrecio"> ${producto.precio} </p>
+                  <Link to={`/detalle/${producto.id}`}>
+                    <p className="tiendaBoton">Detalle</p>
+                  </Link>
+                </div>
+              </Link>
+            );
+          })}
+      </article>
     </section>
   );
 };

@@ -1,8 +1,56 @@
 .tiendaArticulos {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8;
+  /*  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8; */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media screen and (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media screen and (min-width: 1536px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
+
 .tiendaContainer {
-  @apply p-2 shadow-md space-y-8 rounded-sm hover:scale-105 transition-all;
+  /* @apply p-2 shadow-md space-y-8 rounded-sm hover:scale-105 transition-all; */
+  background-color: white;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-radius: 0.125rem;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  /* @include flex-general(row, center);
+  gap: 1rem; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* .container {
@@ -15,7 +63,10 @@
 } */
 
 .tiendaImg {
-  @apply h-[150px] object-contain w-full;
+  /* @apply h-[150px] object-contain w-full; */
+  height: 150px;
+  object-fit: contain;
+  width: 100%;
 }
 
 .tiendaTitulo {
@@ -25,14 +76,139 @@
   margin: 0 0 0.8rem 0;
   text-align: center;
   font-size: 90%; */
-  @apply text-xl font-bold overflow-hidden whitespace-nowrap overflow-ellipsis;
+  /*  @apply text-xl font-bold overflow-hidden whitespace-nowrap overflow-ellipsis; */
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 10px;
 }
 
 .tiendaPrecio {
   margin: 0 0 0.8rem 0;
   text-align: center;
   font-size: 90%;
+  margin: 0 0 20px 0;
 }
 
 .tiendaBoton {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.tienda_subtitulo {
+  /* margin: auto;
+  padding: 20px 0 20px 0;
+  font-family: "pirata one", cursive;
+  text-decoration: underline 3px $rojo2;
+  text-shadow: 1px 1px #18181881, 2px 2px rgba(59, 59, 59, 0.39); */
+  margin: auto;
+  padding: 20px 0;
+  font-family: "pirata one", cursive;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-shadow: 1px 1px #18181881, 2px 2px rgba(59, 59, 59, 0.39);
+}
+
+//detalle
+
+/* .card {
+  display: flex;
+  justify-content: center;
+}
+
+.card_image {
+  width: 10rem;
+}
+ */
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd; /* Borde del contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+  margin-bottom: 15px;
+}
+
+/* Estilos para el precio */
+.card strong {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e44d26; /* Puedes ajustar el color según tu paleta */
+}
+
+/* Estilos para la categoría */
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #007bff; /* Puedes ajustar el color según tu paleta */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Estilos para el botón */
+.card button {
+  background-color: $gris; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.card button:hover {
+  background-color: $gris; /* Color de fondo al pasar el ratón */
+}
+
+// contador
+.product-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-counter button {
+  background-color: $gris;
+  color: white;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-counter button:hover {
+  background-color: $gris;
+}
+
+.product-counter span {
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btnVolver {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }

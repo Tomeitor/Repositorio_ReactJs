@@ -23,31 +23,27 @@ body,
   flex-direction: column;
 }
 
-@import "scss/variables";
-@import "scss/mixins";
-@import "scss/index";
-@import "scss/contacto";
-@import "scss/tienda";
-@import "scss/media";
-
 /* .header {
   @apply flex justify-between p-4 bg-blue-400 shadow-md;
 } */
 
 .main {
   background-image: url("./Components/images/susan-wilkinson-azul2.webp");
-
   background-size: cover;
   background-position: center;
   border-radius: 0;
 }
 
 .carritoUsuario {
-  display: flex;
+  /* display: flex; */
   justify-content: right;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   color: white;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .itemListContainer {
@@ -65,3 +61,10 @@ body,
 .modoDarkOff {
   background-color: rgb(189, 189, 189);
 }
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/index";
+@import "scss/contacto";
+@import "scss/tienda";
+@import "scss/media";

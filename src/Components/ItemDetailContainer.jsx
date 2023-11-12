@@ -1,6 +1,9 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import dataAll from "../json/dataAll.json";
 import { useEffect, useState } from "react";
+import { app } from "../fireBaseconfig";
+import { getFirestore, collection, getDoc, doc } from "firebase/firestore";
+import Detalle from "./Detail";
 
 function ItemDetailContainer() {
   const [loading, setLoading] = useState(true);
@@ -10,7 +13,26 @@ function ItemDetailContainer() {
   const params = useParams();
 
   useEffect(() => {
-    setTimeout(() => {
+    const db = getFirestore(app);
+    const productosCollection = collection(db, "productos");
+
+    const docRef = doc(productosCollection, params.id);
+    const consulta = getDoc(docRef);
+
+    consulta
+      .then((resultado) => {
+        const producto = resultado.data();
+        producto.id = resultado.id;
+        setProducto(producto);
+        setNotFound(false);
+      })
+      .catch((err) => {
+        console.log("error al cargar el producto");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+    /* setTimeout(() => {
       setLoading(false);
 
       dataAll.forEach((producto) => {
@@ -19,7 +41,7 @@ function ItemDetailContainer() {
           setProducto(producto);
         }
       });
-    }, 1000);
+    }, 1000); */
   }, []);
 
   useEffect(() => {
@@ -33,31 +55,9 @@ function ItemDetailContainer() {
   }
 
   return (
-    <div>
-      <article className="card">
-        <h1 className="card__title">{producto.nombre}</h1>
-        <img
-          className="card__image"
-          src={producto.foto}
-          alt={producto.nombre}
-        />
-        <br></br>
-        <strong>
-          <h2>Precio: ${producto.precio}</h2>
-        </strong>
-        <Link to={`/category/${producto.categoria}`}>
-          <h3>Categoria: {producto.categoria}</h3>
-        </Link>
-
-        <button className="btn">Añadir al carrito</button>
-        <br></br>
-        <br></br>
-
-        <Link to={`/`}>
-          <button className="btn2"> volver</button>
-        </Link>
-      </article>
-    </div>
+    <>
+      <Detalle producto={producto} />
+    </>
   );
 }
 export default ItemDetailContainer;

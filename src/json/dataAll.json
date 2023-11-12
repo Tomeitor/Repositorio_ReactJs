@@ -4,224 +4,288 @@
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_sensitive.webp",
     "nombre": "Sensitive",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 2,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_goat.webp",
     "nombre": "Goat",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 3,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_not_real_naranja.webp",
     "nombre": "Not real",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 4,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_21.webp",
     "nombre": "Number 21",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 5,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_hunt.webp",
     "nombre": "Hunt",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 6,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_allergic.webp",
     "nombre": "Alergic",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 7,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_keep_it_simple.webp",
     "nombre": "Keep it simple",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 8,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_bstrd_is_dead.webp",
     "nombre": "Bastard is dead",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 9,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_og_trash.webp",
     "nombre": "Og trash",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 10,
     "categoria": "buzos",
     "foto": "/src/Components/images/campera_justfly.webp",
     "nombre": "Justyfly",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 11,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_b4st4rd.webp",
     "nombre": "B4st4rd",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 12,
     "categoria": "buzos",
     "foto": "/src/Components/images/hoodie_13.webp",
     "nombre": "Number 13",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 13,
     "categoria": "buzos",
     "foto": "/src/Components/images/buzo_apache_gris.webp",
     "nombre": "buzo apache gris",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 14,
     "categoria": "buzos",
     "foto": "/src/Components/images/buzo_come_as_you_are.webp",
     "nombre": "Come as you are",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 15,
     "categoria": "buzos",
     "foto": "/src/Components/images/buzo_dont_belong.webp",
     "nombre": "Dont belong",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 16,
     "categoria": "buzos",
     "foto": "/src/Components/images/buzo_full_gothic.webp",
     "nombre": "Buzo full gothic",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Hoodie comodo y abrigado"
   },
   {
     "id": 17,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera-keep_it.webp",
     "nombre": "Keep it",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 18,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_bastard_2000.webp",
     "nombre": "Bastard 2000",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 19,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_bs90.webp",
     "nombre": "Bs90",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 20,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_complicate_bordada.webp",
     "nombre": "Complicate",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 21,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_evil.webp",
     "nombre": "Evil",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 22,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_kitty_perla.webp",
     "nombre": "Kitty perla",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 23,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_not_real.webp",
     "nombre": "Not real",
-    "precio": 25.999
+    "precio": 25.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 24,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_only_you.webp",
     "nombre": "Only you",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 25,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_pleasure.webp",
     "nombre": "Pleasure",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 26,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_self_love.webp",
     "nombre": "Self love",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 27,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_sensitive.webp",
     "nombre": "Sensitive",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 28,
     "categoria": "remeras",
     "foto": "/src/Components/images/remerabluehair.webp",
     "nombre": "Blue hair girl",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 29,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_happening.webp",
     "nombre": "Happening",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 30,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_heat_not_hot.webp",
     "nombre": "Heat not hot",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 31,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_og-trash_bordada.webp",
     "nombre": "Og trash",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
   {
     "id": 32,
     "categoria": "remeras",
     "foto": "/src/Components/images/remera_sinner.webp",
     "nombre": "Sinner",
-    "precio": 25.999
+    "precio": 15.999,
+    "stock": 5,
+    "descripcion": "Remera suave, como y fina con materiales de calidad"
   },
 
   {
@@ -229,111 +293,143 @@
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon_bst_denim.webp",
     "nombre": "Bst denim",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 34,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-revers1.webp",
     "nombre": "Revers",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 35,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-bat.webp",
     "nombre": "Babucha bat",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 36,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-better.webp",
     "nombre": "Babucha better",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 37,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-geek.webp",
     "nombre": "Babucha geek",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 38,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-michael.webp",
     "nombre": "Babucha michael",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 39,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-quantic.webp",
     "nombre": "Babucha quantic",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 40,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-barden.webp",
     "nombre": "Barden",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 41,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-south.webp",
     "nombre": "South",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 42,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-babucha-thunder.webp",
     "nombre": "Babucha thunder",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 43,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-emilia.webp",
     "nombre": "Emilia",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 44,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-france.webp",
     "nombre": "France",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 45,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-jaune.webp",
     "nombre": "jaune",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 46,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-jogger-apocalypse.webp",
     "nombre": "Jogger apocalypse",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 47,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-jogger-nas.webp",
     "nombre": "Jogger nas",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   },
   {
     "id": 48,
     "categoria": "pantalones",
     "foto": "/src/Components/images/pantalon-velvet.webp",
     "nombre": "Velvet",
-    "precio": 25.999
+    "precio": 21.999,
+    "stock": 5,
+    "descripcion": "Pantalon comodo con materiales de la mejor calidad"
   }
 ]
