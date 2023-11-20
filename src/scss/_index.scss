@@ -20,6 +20,8 @@ header {
 }
 main {
   grid-area: main;
+
+  min-height: 100vh;
 }
 
 footer {
@@ -31,6 +33,18 @@ footer {
   background-size: cover;
   background-position: center;
   border-radius: 0;
+}
+
+.mainContacto {
+  background-image: url("./Components/images/Fondo_contacto_mar_oscuro.webp");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.main-default {
+  background-image: url("./Components/images/Fondo_contacto_mar_oscuro.webp");
 }
 
 .header {
@@ -48,7 +62,7 @@ footer {
   text-align: center;
   color: $rojo2;
   margin: 0 0 1.3rem 0;
-  font-size: 420%;
+  font-size: 400%;
   text-shadow: 3px 3px #8a000081, 5px 5px rgba(56, 0, 0, 0.39);
 
   animation: fly 2s infinite;
@@ -85,14 +99,14 @@ footer {
   color: rgb(179, 0, 0);
   font-size: 140%; */
   /*  margin: 0 2rem; */
-  margin: 10px 10px 0 10px;
+  margin: 10px 5px 0 5px;
   text-align: center;
 
   color: #e4ded0;
   font-family: "bokor", sans-serif;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 120%;
+  font-size: 100%;
   text-shadow: 2px 2px #66666698, 3px 3px rgba(49, 49, 49, 0.315);
 
   &:hover {
@@ -126,7 +140,7 @@ footer {
 }
 
 .search {
-  width: 300px;
+  width: 230px;
   height: 31px;
   margin: 15px auto;
   background: #444;
@@ -138,9 +152,10 @@ footer {
     -1px -1px 10px rgba(0, 0, 0, 0.137), -1px 1px 10px rgba(0, 0, 0, 0.137),
     1px -1px 10px rgba(0, 0, 0, 0.137), 1px -1px 10px rgba(0, 0, 0, 0.137),
     -1px 1px 10px rgba(0, 0, 0, 0.137);
+  transition: height 0.3s ease, opacity 0.3s ease;
 
   .input_search {
-    width: 172px;
+    width: 152px;
     padding: 2.5px 9px;
     float: left;
     color: #ccc;
@@ -153,6 +168,20 @@ footer {
     }
   }
 
+  /* .search.hidden {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: height 0.5s, padding 0.5s;
+  } */
+
+  .scrolled {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
   .button_search {
     position: relative;
     float: right;
@@ -160,7 +189,7 @@ footer {
     padding: 0;
     cursor: pointer;
     height: 30px;
-    width: 75px;
+    width: 60px;
     color: #ccc;
     background: transparent;
     border-left: 1px solid rgba(58, 58, 58, 0.2);
@@ -168,7 +197,7 @@ footer {
     transition: color, background 0.5s;
     &:hover {
       color: #33383b;
-      background: #cfcfcf;
+      background: #6b6b6b;
     }
     &:active {
       box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
@@ -181,17 +210,40 @@ footer {
 
 //mensaje personalizado
 
-.mensaje {
+/* .mensaje {
   overflow: hidden;
+} */
+.mensajeContainer {
+  display: flex;
+  justify-content: center;
 }
+
+// .contenedor {
+//   overflow: hidden;
+//   width: 90%; /* Ancho adaptable */
+//   max-width: 350px; /* Ancho máximo del contenedor */
+
+//   margin: 0 auto; /* Centrar horizontalmente */
+//   padding: 20px; /* Relleno general */
+// }
 
 .contenedor {
   overflow: hidden;
+  width: 100%; /* Ancho adaptable */
+  max-width: 100vw; /* Ancho máximo igual al ancho total de la pantalla */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Relleno general */
 }
 
 .mensajeAnimado {
   animation: desplazamiento 20s linear infinite;
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Estilos para el texto dentro del contenedor */
+.textoMensaje {
+  font-size: 1rem; /* Tamaño de fuente base */
+  /* Otros estilos para el texto */
 }
 
 @keyframes desplazamiento {
@@ -211,9 +263,38 @@ footer {
 
 //carrito
 
+.carritoUsuario {
+  /* display: flex; */
+  justify-content: right;
+  text-align: center;
+  margin: 5.6rem 0.3rem;
+  color: white;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .cartIcon {
-  font-size: 140%;
+  font-size: 80%;
   color: rgb(114, 114, 114);
+}
+
+.cartTextContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cartText1 {
+  display: none;
+  font-size: 70%;
+  margin: 0 5px 0 0;
+  font-family: "bokor", sans-serif;
+}
+
+.cartText2 {
+  font-size: 70%;
+  font-family: "bokor", sans-serif;
 }
 
 //footer
@@ -256,6 +337,7 @@ footer {
 
 .sobre_suspicions2 {
   font: normal 42px "pirata one", cursive;
+  margin: 10px;
 }
 
 .sobre_suspicions1 {
@@ -284,6 +366,10 @@ footer {
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
+}
+
+.footer-links2 {
+  margin: 0 8px;
 }
 
 .footer-distributed .footer-company-name {

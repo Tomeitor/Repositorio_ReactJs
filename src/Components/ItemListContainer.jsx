@@ -43,8 +43,8 @@ console.log("hola");
 /* const db = getFirestore(app);
 const productosCollection = collection(db, "productos"); */
 
-/* // Función para añadir un producto a la base de datos
-const addProductToFirestore = async (producto) => {
+// Función para añadir un producto a la base de datos
+/* const addProductToFirestore = async (producto) => {
   try {
     // Añade el producto a la colección
     const docRef = await addDoc(productosCollection, producto);

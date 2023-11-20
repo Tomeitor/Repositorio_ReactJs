@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   /*   const [modoDark, setModoDark] = useState(true);
@@ -40,20 +41,39 @@ const Footer = () => {
         <h3 className="sobre_suspicions1">
           Sobre:
           <span
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            class="sobre_suspicions2"
+            /* data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" */
+            className="sobre_suspicions2"
           >
             Suspicions
           </span>
         </h3>
 
-        <p className="footer-links">
-          <a href="#">Inicio</a>|<a href="pages/remeras.html">Remeras</a>|
+        <div className="footer-links">
+          <Link to="/">
+            <p className="footer-links2">Inicio</p>
+          </Link>
+          |
+          <Link to="/category/remeras">
+            <p className="footer-links2">Remeras</p>
+          </Link>
+          |
+          <Link to="/category/buzos">
+            <p className="footer-links2">Buzos</p>
+          </Link>
+          |
+          <Link to="/category/pantalones">
+            <p className="footer-links2">Pantalones</p>
+          </Link>
+          |
+          <Link to="/contacto">
+            <p className="footer-links2">Contacto</p>
+          </Link>
+          {/* <a href="#">Inicio</a>|<a href="pages/remeras.html">Remeras</a>|
           <a href="pages/buzos.html">Buzos</a>|
           <a href="pages/pantalones.html">Pantalones</a>|
-          <a href="pages/contacto.html">Contacto</a>
-        </p>
+          <a href="pages/contacto.html">Contacto</a> */}
+        </div>
 
         <p className="footer-company-name">
           Copyright © 2023 Suspicions - Todos los derechos reservados

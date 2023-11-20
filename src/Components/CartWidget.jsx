@@ -18,8 +18,9 @@ const Cartwidget = () => {
         <FontAwesomeIcon icon={faCartShopping} />
       </NavLink>
       {/*  <p>Carrito: {valorContexto.carrito.length} </p> */}
-      <Link to="/carrito">
-        <p>Carrito: {cantidadTotalProductos} </p>
+      <Link className="cartTextContainer" to="/carrito">
+        <p className="cartText1">Carrito:</p>
+        <p className="cartText2"> {cantidadTotalProductos} </p>
       </Link>
     </div>
   );

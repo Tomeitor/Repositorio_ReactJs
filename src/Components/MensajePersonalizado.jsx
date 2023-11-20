@@ -26,9 +26,11 @@ const MensajePersonalizado = ({ greeting }) => {
   }, [valorContexto.carrito, cantidadProductos]);
 
   return (
-    <div className="itemListContainer contenedor">
-      <p className="mensajeAnimado">{mensaje}</p>
-      {/* <p>{greeting}</p> */}
+    <div className="mensajeContainer">
+      <div className="itemListContainer contenedor">
+        <p className="mensajeAnimado textoMensaje">{mensaje}</p>
+        {/* <p>{greeting}</p> */}
+      </div>
     </div>
   );
 };

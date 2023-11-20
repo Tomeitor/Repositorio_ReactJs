@@ -61,16 +61,20 @@ const Contador = ({ stock, initial, onAdd }) => {
 
   return (
     <div className="product-counter">
-      <button className="btn" onClick={decrementar}>
-        -
-      </button>
-      <span>{cantidad}</span>
-      <button className="btn" onClick={incrementar}>
-        +
-      </button>
-      <button className="btn" onClick={handleAdd}>
-        Confirmar
-      </button>
+      <div className="btnDivContainer">
+        <button className="btn btnSpace" onClick={decrementar}>
+          -
+        </button>
+        <span className="cantidadDelProducto">{cantidad}</span>
+        <button className="btn btnSpace" onClick={incrementar}>
+          +
+        </button>
+      </div>
+      <div>
+        <button className="btn" onClick={handleAdd}>
+          Confirmar
+        </button>
+      </div>
     </div>
   );
 };

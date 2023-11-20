@@ -1,5 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import Cartwidget from "./CartWidget";
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
   return (
     <nav className="nav1">
@@ -7,14 +9,14 @@ const Navbar = () => {
         <input className="navBuscador" type="text" />
       </div> */}
 
-      <form class="search" id="formbuscar" action="">
+      <form className="search" id="formbuscar" action="">
         <input
-          class="input_search"
+          className="input_search"
           type="search"
           placeholder="Buscar..."
           required
         />
-        <button class="button_search" type="submit">
+        <button className="button_search" type="submit">
           Search
         </button>
       </form>

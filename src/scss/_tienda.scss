@@ -2,7 +2,8 @@
   /*  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8; */
 
   display: grid;
-  grid-template-columns: 1fr;
+
+  justify-content: center;
   gap: 1rem;
 
   @media screen and (min-width: 640px) {
@@ -49,6 +50,7 @@
   gap: 1rem; */
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -103,10 +105,11 @@
   font-family: "pirata one", cursive;
   text-decoration: underline 3px $rojo2;
   text-shadow: 1px 1px #18181881, 2px 2px rgba(59, 59, 59, 0.39); */
+  text-align: center;
   margin: auto;
   padding: 20px 0;
   font-family: "pirata one", cursive;
-  text-decoration: underline;
+  text-decoration: underline 3px $rojo2;
   text-decoration-thickness: 3px;
   text-shadow: 1px 1px #18181881, 2px 2px rgba(59, 59, 59, 0.39);
 }
@@ -124,12 +127,19 @@
  */
 
 .card {
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 4rem auto;
   padding: 20px;
   border: 1px solid #ddd; /* Borde del contenedor */
   border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .card_title {
@@ -138,11 +148,30 @@
   margin-bottom: 10px;
 }
 
+.card_precio {
+  font-size: 1rem;
+  color: #33383b;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.card_descripcion {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.card_categoria {
+  color: red;
+  text-decoration: none;
+  margin: 0 0 30rem 0;
+}
+
 .card_image {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Bordes redondeados para la imagen */
   margin-bottom: 15px;
+}
+.btnAddToCart {
+  margin: 2rem 3.6rem;
 }
 
 /* Estilos para el precio */
@@ -183,12 +212,13 @@
 .product-counter {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .product-counter button {
-  background-color: $gris;
-  color: white;
+  background-color: rgba(143, 212, 252, 0.438);
+  color: #0059ff;
   padding: 8px 12px;
   font-size: 1rem;
   border: none;
@@ -198,7 +228,7 @@
 }
 
 .product-counter button:hover {
-  background-color: $gris;
+  background-color: #0059ff;
 }
 
 .product-counter span {
@@ -207,8 +237,167 @@
   font-weight: bold;
 }
 
+.btnDivContainer {
+  margin: 1rem 0;
+}
+
+.btnSpace {
+  margin: 0 2rem;
+}
+
+.btnAddToCart {
+  text-decoration: underline;
+}
+
+.cantidadDelProducto {
+  text-decoration: underline;
+}
+
 .btnVolver {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+}
+
+.paymentsSection {
+  @include flex-general(row, center);
+  margin: 3rem 0 2rem 0;
+  gap: 1rem;
+}
+
+.paymentsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 2rem 0;
+  background-color: rgba(255, 255, 255, 0.493);
+  border-radius: 10px;
+  padding: 0 20px 0 10px;
+}
+
+.paymentsMiniContainer {
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.paymentsIcon {
+  padding: 3px 0 0 0;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.paymentsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentsH2 {
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 0.4px 0.4px #18181881, 1px 1px rgba(59, 59, 59, 0.39);
+  font-size: 100%;
+}
+
+.PaymentsP {
+  font-size: 70%;
+  color: rgba(58, 58, 58, 0.849);
+}
+
+.paymentsDivision {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.paymentsDivision2 {
+  font-size: 0.1px;
+}
+
+.cartProductContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  background-color: white;
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 0.225rem;
+  margin: 0.5rem 0;
+}
+
+.cartDetailImage {
+  width: 13rem;
+}
+
+.cartImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  margin: auto;
+}
+
+.cartDivContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 1rem;
+  width: 90%;
+}
+
+.cartProductH3 {
+  font-size: 100%;
+  margin: 1rem 0 1rem 0rem;
+}
+
+.cartPoductP {
+  font-size: 80%;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.cartFinalDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 10rem;
+  background-color: white;
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 0.225rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.cartBtnFinalDetails {
+  margin: 0 0.7rem;
+}
+
+.carritoVacioContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  background-image: url(/src/Components/images/slide_modelos1.webp);
+  height: 30rem;
+  border-radius: 0.2rem;
+}
+.carritoVacioDivImg {
+  display: flex;
+  justify-content: center;
+}
+.carritoVacioImg {
+  width: 10rem;
+  margin: 2rem auto;
+}
+
+.carritoVacioVolver {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.carritoVacioText {
+  font-family: "bokor", sans-serif;
+  color: rgb(83, 83, 83);
 }

@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { app } from "../fireBaseconfig";
 import { contexto } from "./providers/provider";
+import PaymentCard from "./PaymentCard";
 
 const Carrito = () => {
   // const valorContexto = useContext(contexto);
@@ -121,12 +122,26 @@ const Carrito = () => {
     //   </button>
     // </div>
 
-    <div>
-      <h2 className="font-bold text-2xl mb-8">Carrito</h2>
+    <div className="container">
+      <h2 className="font-bold text-2xl mb-8 tienda_subtitulo">CARRITO</h2>
       {valorContexto.carrito.length === 0 ? (
         <>
-          <p>El carrito está vacío</p>
-          <Link to="/">Volver</Link>
+          <div className="carritoVacioContainer">
+            <p className="cartProductH3 carritoVacioText">
+              El carrito esta vacio
+            </p>
+            <Link className="carritoVacioVolver carritoVacioText" to="/">
+              Volver
+            </Link>
+            <div className="carritoVacioDivImg">
+              <img
+                className="carritoVacioImg"
+                src="/src/Components/images/carritovacio.webp"
+                alt="Carrito vacio"
+              />
+            </div>
+          </div>
+          <PaymentCard />
         </>
       ) : (
         <>
@@ -134,31 +149,51 @@ const Carrito = () => {
           <ul>
             {valorContexto.carrito &&
               valorContexto.carrito.map((producto) => (
-                <li key={producto.id}>
-                  <p>Producto: {producto.nombre}</p>
-                  <img
-                    className="card__image"
-                    src={producto.foto}
-                    alt={producto.nombre}
-                  />
-                  <p>Cantidad: {producto.cantidad}</p>
-                  <p>Precio: ${producto.precio * producto.cantidad}</p>
+                <li className="cartProductContainer" key={producto.id}>
+                  <div className="cartImageContainer">
+                    <img
+                      className="cartDetailImage"
+                      src={producto.foto}
+                      alt={producto.nombre}
+                    />
+                  </div>
+                  <div className="cartDivContainer">
+                    <h3 className="cartProductH3">
+                      Producto: {producto.nombre}
+                    </h3>
+                    <hr />
+                    <p className="cartPoductP">Cantidad: {producto.cantidad}</p>
+                    <hr />
+                    <p className="cartPoductP">
+                      Precio: ${producto.precio * producto.cantidad}
+                    </p>
+                  </div>
                 </li>
               ))}
           </ul>
 
           {/* Mostrar el valor total de todos los productos */}
-          <p>Valor Total: ${valorTotal}</p>
+          <div className="cartFinalDetailsContainer">
+            <div>
+              <p className="cartPoductP">Valor Total: ${valorTotal}</p>
+            </div>
 
-          {/* Botón para finalizar la compra */}
-          <button onClick={handleFinalizarCompra} className="btn">
-            Finalizar compra
-          </button>
+            {/* Botón para finalizar la compra */}
+            <div>
+              <button onClick={handleFinalizarCompra} className="btn btn-dark">
+                Finalizar compra
+              </button>
 
-          {/* Botón para vaciar el carrito */}
-          <button onClick={valorContexto.handleVaciarCarrito} className="btn">
-            Vaciar Carrito
-          </button>
+              {/* Botón para vaciar el carrito */}
+              <button
+                onClick={valorContexto.handleVaciarCarrito}
+                className="btn btn-dark cartBtnFinalDetails"
+              >
+                Vaciar Carrito
+              </button>
+            </div>
+          </div>
+          <PaymentCard />
         </>
       )}
     </div>

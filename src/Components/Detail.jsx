@@ -22,26 +22,50 @@ function Detalle(props) {
     return (
       <div>
         <article className="card">
-          <h1 className="card_title">{props.producto.nombre}</h1>
-          <img
-            className="card_image"
-            src={props.producto.foto}
-            alt={props.producto.nombre}
-          />
-          <br></br>
-          <strong>
-            <h2>Precio: ${props.producto.precio}</h2>
-          </strong>
-          <Link to={`/category/${props.producto.categoria}`}>
-            <h3>Categoria: {props.producto.categoria}</h3>
-          </Link>
-          <Link to="/carrito" className="btn" onClick={handleClick}>
-            Añadir al carrito
-          </Link>
-          <div className="btnVolver">
-            <Link to={`/`}>
-              <button className="btn2"> volver</button>
-            </Link>
+          <div className="detailContainer">
+            <div>
+              <img
+                className="card_image"
+                src={props.producto.foto}
+                alt={props.producto.nombre}
+              />
+            </div>
+            <div>
+              <h1 className="card_title">{props.producto.nombre}</h1>
+              <hr />
+              <br></br>
+              <strong>
+                <h2 className="card_precio">
+                  Precio: ${props.producto.precio}
+                </h2>
+              </strong>
+              <hr />
+              <p className="card_descripcion">
+                {" "}
+                Descripción: {props.producto.descripcion}.
+              </p>
+
+              <Link
+                className="card_categoria"
+                to={`/category/${props.producto.categoria}`}
+              >
+                <h3>Categoria: {props.producto.categoria}</h3>
+              </Link>
+              <Link
+                to="/carrito"
+                className="btn btn-dark btnAddToCart"
+                onClick={handleClick}
+              >
+                Añadir al carrito
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div className="btnVolver">
+              <Link to={`/`}>
+                <button className="btn2"> volver</button>
+              </Link>
+            </div>
           </div>
         </article>
       </div>
@@ -50,21 +74,41 @@ function Detalle(props) {
     return (
       <div>
         <article className="card">
-          <h1 className="card_title">{props.producto.nombre}</h1>
-          <img
-            className="card_image"
-            src={props.producto.foto}
-            alt={props.producto.nombre}
-          />
-          <br></br>
-          <strong>
-            <h2>Precio: ${props.producto.precio}</h2>
-          </strong>
-          <Link to={`/category/${props.producto.categoria}`}>
-            <h3>Categoria: {props.producto.categoria}</h3>
-          </Link>
+          <div className="detailContainer">
+            <div>
+              <img
+                className="card_image"
+                src={props.producto.foto}
+                alt={props.producto.nombre}
+              />
+            </div>
+            <div>
+              <h1 className="card_title">{props.producto.nombre}</h1>
+              <hr />
+              <br></br>
+              <strong>
+                <h2 className="card_precio">
+                  Precio: ${props.producto.precio}
+                </h2>
+              </strong>
+              <hr />
+              <p className="card_descripcion">
+                Descripción: {props.producto.descripcion}.
+              </p>
+              <Link
+                className="card_categoria"
+                to={`/category/${props.producto.categoria}`}
+              >
+                <h3>Categoria: {props.producto.categoria}</h3>
+              </Link>
 
-          <Contador stock={props.producto.stock} initial={1} onAdd={handle} />
+              <Contador
+                stock={props.producto.stock}
+                initial={1}
+                onAdd={handle}
+              />
+            </div>
+          </div>
           <div className="btnVolver">
             <Link to={`/`}>
               <button className="btn2"> volver</button>

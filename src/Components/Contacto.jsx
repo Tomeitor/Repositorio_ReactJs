@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Contacto = () => {
   return (
-    <main className="main_contacto">
+    <main className="mainContacto">
       <p className="p_contacto">
         Contactate con nosotros para resolver <br />
         cualquier duda o problema mediante nuestro <br />

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import ItemListContainer from "./ItemListContainer";
 import ItemDetailContainer from "./ItemDetailContainer";
 import Carrito from "./Carrito";
